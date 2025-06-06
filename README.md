@@ -12,7 +12,7 @@ Currently, voting takes place for binary (Bravo) proposals.
 
 This means the only options for a voter are For, Against, Abstain. This is implemented in `GovernorCountingSimple`.
 
-If the For and Abstain votes reach a high enough threshold (the quorum) then the vote data is executed on-chain.
+If the For and Abstain votes reach a high enough threshold (the quorum) then the vote data can be executed on-chain.
 
 ## Additions with OZ Governor Counting Multiple
 
@@ -22,7 +22,7 @@ With this extension, the creation of proposals with multiple options is possible
 
 These proposals can have an arbitrary number of options, where each option contains on-chain data that can be executed after a successful voting round.
 
-Along with the `targets`, `values` and `calldatas` parameters that are passed to the `propose` function, a parameter for number of options `nOptions`, number of winning options `nWinners` and indices of each option within the `calldatas` array is specified.
+Included in the `targets`, `values` and `calldatas` parameters that are passed to the `propose` function, exists metadata describing number of options `nOptions`, number of winning options `nWinners` and indices of each option.
 
 These indices specify the starting location of each option in the `targets`, `values` and `calldatas` arrays.
 
