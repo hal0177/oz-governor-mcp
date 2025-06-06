@@ -32,8 +32,6 @@ error InvalidProposalType(uint8 nOptions, uint8 nWinners);
  * @dev Extension of {Governor} for advanced voting configurations including multiple-choice voting,
  * approval voting and weighted approval voting.
  *
- * Governor on Steroids!!
- *
  * The support parameter in voting functions is interpreted as a bitmap where each
  * bit represents a choice (up to 8 options):
  * - For Bravo voting, the support is simply the vote type (0 = Against, 1 = For, 2 = Abstain)

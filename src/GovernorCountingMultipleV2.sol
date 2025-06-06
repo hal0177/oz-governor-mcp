@@ -8,8 +8,6 @@ import { IGovernor, Governor } from "./Governor.sol";
  * @dev Extension of {Governor} for advanced voting configurations including multiple-choice voting,
  * approval voting and weighted approval voting.
  *
- * GovernorCouting on Steroids!!
- *
  * The difference between this and GovernorCountingMultipleV1 is that this version places no restriction
  * on the number of options or winners. This is achieved by:
  * 1. Specifying the proposal information (number of options and number of winners) in the first bytes value of the
